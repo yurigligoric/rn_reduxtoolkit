@@ -16,16 +16,20 @@ const Home = () => {
 
   };
 
+  const handleCount = () =>{
+    dispatch(increment());
+
+  };
 
   return (
     <View>
       <Text>home</Text>
-      <Text style={{fontSize: '24px'}}>{count}</Text>
+      <Text>{count}</Text>
 
       <TouchableHighlight onPress={handlePress}>
          <Text>GOTO PAGE1</Text>
       </TouchableHighlight>
-      <TouchableHighlight onPress={()=>dispatch(increment())}>
+      <TouchableHighlight onPress={handleCount}>
          <Text>Increment</Text>
       </TouchableHighlight>
 
