@@ -29,10 +29,10 @@ type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
-import store from './state/store'
-import { Provider } from 'react-redux'
+import store from './src/state/store';
+import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
-import Navigation from './components/Navigation';
+import Navigation from './src/components/Navigation';
 
 
 function Section({children, title}: SectionProps): React.JSX.Element {

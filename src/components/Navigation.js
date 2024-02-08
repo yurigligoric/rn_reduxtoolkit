@@ -6,18 +6,13 @@ import Page1 from '../pages/page1';
 
 
 const Navigation = () => {
-
-    const Stack = createNativeStackNavigator();
+  const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator>
         <Stack.Group>
             <Stack.Screen name="home" component={Home} />
             <Stack.Screen name="page1" component={Page1} />
-
-
-
         </Stack.Group>
-
     </Stack.Navigator>
   );
 };
